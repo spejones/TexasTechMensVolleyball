@@ -9,36 +9,64 @@
 html {
 	scroll-behavior: smooth;
 }
+main{
+	background-color: rgb(0, 0, 0,.25);
+}
+.return-top-wrapper {
+    text-align: center;
+    margin: 50px 0;
+}
+#return-top{
+	color: black; 
+	text-align: center;font-size: 1rem; font-family: Helvetica, sans-serif, arial; 
+}
+footer{
+	text-align: center; padding: 25px; margin-top: 50px;
+	font-size: small; font-weight: bold; font-family: 'Times New Roman', Times, serif;
+}
 
 
 .navbar{
-    background-color: rgb(153, 0, 0);
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	padding-right: auto;
-	position: fixed;
-    top: 0px;
-    width: 100%;
+    background-color: rgb(204, 0, 0);
+    display: flex; position: fixed;
+    justify-content: space-between; align-items: center;
+    padding-right: auto; top: 0px; width: 100%;
     z-index: 10000;
 }
 .navbar ul{
     list-style: none;
-    padding: 0px; padding-right: 20px;
-    margin: 0px;
+    padding: 0px; padding-right: 20px; margin: 0px;
     display: flex;
-	font-family: Helvetica, sans-serif, arial;
-	font-size: 24px;
+    font-size: 24px; font-family: Helvetica, sans-serif, arial;
+}
+.navbar ul li {
+    position: relative;
 }
 .navbar a{
-	text-decoration: none;
-	color: white;
-	padding: 15px;
-	display: inline-block;
-	text-align: center;
+    text-decoration: none; text-align: center;
+    color: white;
+    padding: 15px;
+    display: inline-block;
 }
 .navbar a:hover{
-	background-color: black;
+    background-color: black;
+}
+.navbar ul li ul.dropdown {
+    display: none; position: absolute;
+    background-color: rgb(153, 0, 0);
+    padding: 0; margin-top: 0;
+    list-style: none;
+}
+.navbar ul li:hover ul.dropdown {
+    display: block;
+}
+.navbar ul li ul.dropdown li a {
+    display: block;
+    white-space: nowrap;
+    padding: 10px 15px;
+}
+.navbar ul li ul.dropdown li a:hover {
+    background-color: black;
 }
 .navbar img{
 	height: 175px;
@@ -67,45 +95,51 @@ html {
 .learn-button:hover {
     background-color: black;
 }
-.a-team, .b-team {
-    width: 50%; height: auto;
+.roster-image {
+    max-width: 500px; height: auto;
+    border: 5px solid rgb(153, 0, 0); border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); padding: 5px;
 }
-
-
+.roster-container {
+    display: flex; flex-wrap: wrap;
+    justify-content: center; gap: 30px;
+    padding-bottom: 50px; padding-left: 75px; padding-right: 75px;
+}
+.roster-image:hover {
+	transform: scale(1.5);
+}
 
 .profile-container {
 	display: flex; flex-wrap: wrap;
 	justify-content: space-around;
-	gap: 30px; margin: 75px 0px;
+	gap: 20px; margin: 0px 0px; padding-top: 80px; padding-bottom: 80px;
 }
 .profile-card {
-	background-color: #fff;
+	background-color:  black;
 	border-radius: 12px;
 	padding: 20px;
-	width: 160px;
+	width: 180px;
 	text-align: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .profile-pic {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	width: 100px; height: 100px;
+	border-radius: 50%; border: 3px solid #4a90e2;
 	object-fit: cover;
 	margin-bottom: 15px;
-	border: 3px solid #4a90e2;
 }
 .name {
 	font-weight: bold; font-family: 'charter', 'Times New Roman', Times, serif;
 	font-size: 1.1em;
 	margin-bottom: 5px;
-	color: #333;
+	color:  rgb(153, 0, 0);
 }
 .job-title {
 	font-size: 0.9em; font-family: Helvetica, sans-serif, arial;
-	color: #777;
+	color: #959595;
 }
 .profile-card:hover{
-	transform: scale(1.37);
+	transform: scale(1.5);
 }
 
 
@@ -120,8 +154,8 @@ h2{
 	font-family:'charter', 'Times New Roman', Times, serif; font-size: 1.3rem;
 }
 h3{
-	background-color: #d4d4d4; color:  rgb(153, 0, 0);
-	width: 100%; margin: 0; margin-top: 75px;
+	background-color: rgb(204, 0, 0); color: #d4d4d4;
+	width: 100%; margin: 0;
 	padding: 50px; text-align: center;
 	font-size: 1.8rem; font-family: 'charter', 'Times New Roman', Times, serif;
 }
@@ -149,9 +183,12 @@ p{
 	text-align: center; font-family: Helvetica, sans-serif, arial;
 }
 #leaders{
-	background-color: #d4d4d4; color:  rgb(153, 0, 0);
+	background-color: rgb(204, 0, 0); color:  #d4d4d4;
 	width: 100%; Margin: 0; padding: 50px; text-align: center;
 	font-size: 1.8rem; font-family: 'charter', 'Times New Roman', Times, serif;
+}
+#News-heading{
+	margin-top: 0px;
 }
 #roster-updates{
 	margin-left: 50px; padding: 20px;
@@ -177,17 +214,19 @@ p{
     color: #555;
 }
 
-
+.news-section{
+	margin: 0; 
+	padding-top: 30px; padding-bottom: 50px;
+}
 .bulletin {
-    background-color: white;
+    background-color: white; max-width: 900px;
     padding: 60px 40px; margin: 50px auto;
     text-align: center;
-    max-width: 900px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .bulletin p {
-    color: grey;
+    color: black;
     font-size: 1.4rem; font-family: 'charter', 'Times New Roman', Times, serif; text-align: center;
     margin-bottom: 20px; margin-left: auto; margin-right: auto;
 }
@@ -197,23 +236,24 @@ p{
 	text-decoration: none;
 }
 .bulletin-link:hover {
-    text-decoration: underline; color: rgb(232, 3, 3);
+    text-decoration: underline; color: rgb(204, 3, 3);
 }
 
 
 .info-box-container{
     display: flex; justify-content: space-around; flex-wrap: wrap;
-    margin: 30px 50px; gap: 10px;
+    margin: 0px; gap: 10px;
+	padding: 60px 50px;
 }
 .info-box {
-    background-color: #ffffff;
+    background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 10px;
     padding: 25px;
-    display: flex; flex-direction: column; align-items: flex-start;
-	justify-content: space-between; flex: 1;
+    display: flex; flex-direction: column; align-items: flex-start; flex: 1;
+	justify-content: space-between; 
     min-width: 250px; max-width: 500px;
     min-height: 250px; max-height: 500px;
-    font-family: Helvetica, sans-serif, Arial;
+	font-family: Helvetica, sans-serif, Arial;
 }
 .info-box p{
     font-size: 1.5rem; font-family:  Helvetica, sans-serif, Arial;
@@ -227,13 +267,15 @@ p{
 .info-box a:hover{
     text-decoration: underline;
 }
-.info-disclaimer {
-    background-color: #d4d4d4; color: black;
+.info-disclaimer{
+    background-color: rgb(204, 0, 0); color: #d4d4d4;
     margin: 0px; padding: 50px; padding-top: 0px;
     text-align: center; font-family: Helvetica, sans-serif, Arial; font-size: 1.2rem;
 }
 
-
+.requirements-container {
+	padding-top: 20px; padding-bottom: 50px; margin: 0px;
+}
 .requirments{
 	margin-left: 75px; margin-top: 5px;
 	font-family: Helvetica, sans-serif, arial; font-size: 1rem;
@@ -244,21 +286,12 @@ a.waiver{
 }
 
 .map-container {
-    width: 100%; padding: 30px 0;
+    width: 100%; padding: 0px 0px;
 }
 
-.return-top-wrapper {
-    text-align: center;
-    margin: 50px 0;
-}
-#return-top{
-	color: black; 
-	text-align: center;font-size: 1rem; font-family: Helvetica, sans-serif, arial; 
-}
-footer{
-	text-align: center; padding: 25px; margin-top: 50px;
-	font-size: small; font-weight: bold; font-family: 'Times New Roman', Times, serif;
-}
+
+
+
 
 /*Tryouts*/
 .tryout-info-wrapper {
@@ -276,21 +309,21 @@ footer{
     margin-bottom: 10px; margin-top: 30px; margin-left: auto; margin-right: auto;
     text-align: center; font-family: 'charter', 'Times New Roman', Times, serif; font-size: 1.8rem;
 }
-.tryout-description {
+.tryout-description{
     color: black; line-height: 1.5em;
     text-align: left; font-family: Helvetica, sans-serif, arial; font-size: 1.2rem;
 	margin-left: auto; margin-right: auto;
 }
-.tryout-image {
+.tryout-image{
     flex: 1; object-fit: cover;
     max-width: 400px; max-height: 100%;
     border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.waiver2 {
+.waiver2{
 	color: rgb(153, 0, 0); text-align: center;
 	margin-left: 10px; margin-right: auto; margin-top: 30px; margin-bottom: 50px;
 }
-.learn-more-button {
+.learn-more-button{
     position: absolute; margin-bottom: 15px; right: 15px;
     background-color: rgb(153, 0, 0); color: white;
     padding: 8px 16px;
@@ -308,9 +341,9 @@ footer{
     justify-content: center;
     gap: 100px; margin: 20px 75px;
 }
-.requirement-card {
+.requirement-card{
     background-color:  #f5f5f5;
-    border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     width: 200px; height: 200px; padding: 15px;
     display: flex; flex-direction: column; align-items: center;
     text-align: center; font-family: Helvetica, sans-serif, Arial;
@@ -325,13 +358,13 @@ footer{
     color: black; text-align: center;
     margin: auto auto;
 }
-a.requirement-link {
+a.requirement-link{
     font-size: 0.9rem; font-family: Helvetica, sans-serif, Arial;
     display: block;
 	color: black; text-align: center; text-decoration: none;
     margin: auto auto;   
 }
-.requirement-card a.requirement-link:hover {
+.requirement-card a.requirement-link:hover{
     text-decoration: underline; font-size: 1.1rem; font-weight: bold;
     color: rgb(153, 0, 0);
 }
@@ -385,7 +418,7 @@ a.requirement-link {
     margin-top: 10px ; margin-bottom: 100px; margin-left: auto; margin-right: auto;
 }
 
-.location-box {
+.location-box{
     flex: 1;
     min-width: 300px; padding: 10px;
     border: 2px solid #ccc; border-radius: 10px;
@@ -441,11 +474,10 @@ a.requirement-link {
 
 /*support*/
 .fund-container {
-	max-width: 950px;
-	margin: 40px auto; padding: 24px;
-	background: rgb(192, 191, 191);
-	border-radius: 12px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px; margin: 0 auto;
+    border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
 }
 .fund-header {
 	text-align: center;
@@ -455,22 +487,22 @@ a.requirement-link {
 	font-size: 1.7rem; font-family: 'charter', 'Times New Roman', Times, serif;
 	margin: 0; padding: 50px;
 }
-.fund-image {
+.fund-image{
 	width: 100%;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
-.fund-story {
+.fund-story{
     text-align: center; font-family: 'charter', 'Times New Roman', Times, serif;
-    padding: 20px; margin: 0 auto; max-width: 900px;
+    padding: 20px; margin: 0px auto; max-width: 900px;
 }
-.fund-story p {
-    margin: 0; margin-left: auto; margin-right: auto;
+.fund-story p{
+    margin-top: 0px; margin-left: auto; margin-right: auto;
     padding: 10px; 
 }
 .donate-button {
 	display: inline-block;
-	padding: 14px 28px; margin: 20px 0;
+	padding: 14px 28px; margin-top: 20px; margin-bottom: 0px; margin-left: auto; margin-right: auto;
 	font-size: 2rem; font-weight: bold; text-decoration: none;
 	color: white; background-color: #00b964;
 	border: none; border-radius: 8px;
