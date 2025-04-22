@@ -26,6 +26,8 @@ footer{
 }
 
 
+
+/*navigation bar*/
 .navbar{
     background-color: rgb(204, 0, 0);
     display: flex; position: fixed;
@@ -75,6 +77,44 @@ footer{
 }
 
 
+
+/*all heading & p*/
+h1{
+	padding-top: 150px; padding-bottom: 50px;
+	background-color: black; color: white; 
+	text-align: center; width: 100%;
+	font-family: 'charter', 'Times New Roman', Times, serif; font-size: 2.6rem;
+}
+h2{
+	margin: 50px; text-align: center; margin-bottom: 20px;
+	font-family:'charter', 'Times New Roman', Times, serif; font-size: 1.3rem;
+}
+h3{
+	background-color: rgb(204, 0, 0); color: white;
+	width: 100%; margin: 0;
+	padding: 50px; text-align: center;
+	font-size: 1.8rem; font-family: 'charter', 'Times New Roman', Times, serif;
+}
+h4{
+	margin-left: 50px; padding: 5px;
+	font-size: 1.1rem; font-family: 'charter','Times New Roman', Times, serif;
+}
+h5{
+	margin-left: 50px; padding: 20px;
+	font-family: 'charter','Times New Roman', Times, serif; font-size: 1.3rem;
+}
+h6{
+	margin-left: 50px; text-align: center; 
+	font-family: 'charter','Times New Roman', Times, serif; font-size: 1.2rem;
+}
+p{
+	margin-left: 75px; padding: 10px;
+	font-family: Helvetica, sans-serif, arial; font-size: 1rem;
+}
+
+
+
+/*homepage*/
 .opening-image-container {
     position: relative;
     width: 100%; height: auto;
@@ -143,68 +183,39 @@ footer{
 }
 
 
-h1{
-	padding-top: 150px; padding-bottom: 50px;
-	background-color: black; color: white; 
-	text-align: center; width: 100%;
-	font-family: 'charter', 'Times New Roman', Times, serif; font-size: 2.6rem;
-}
-h2{
-	margin: 50px; text-align: center; margin-bottom: 20px;
-	font-family:'charter', 'Times New Roman', Times, serif; font-size: 1.3rem;
-}
-h3{
-	background-color: rgb(204, 0, 0); color: #d4d4d4;
-	width: 100%; margin: 0;
-	padding: 50px; text-align: center;
-	font-size: 1.8rem; font-family: 'charter', 'Times New Roman', Times, serif;
-}
-h4{
-	margin-left: 50px; padding: 5px;
-	font-size: 1.1rem; font-family: 'charter','Times New Roman', Times, serif;
-}
-h5{
-	margin-left: 50px; padding: 20px;
-	font-family: 'charter','Times New Roman', Times, serif; font-size: 1.3rem;
-}
-h6{
-	margin-left: 50px; text-align: center; 
-	font-family: 'charter','Times New Roman', Times, serif; font-size: 1.2rem;
-}
-p{
-	margin-left: 75px; padding: 10px;
-	font-family: Helvetica, sans-serif, arial; font-size: 1rem;
-}
-
-
+/*homepage heading specific*/
 #purpose{
 	background-color: black; color: white; 
 	margin: 0px; padding: 50px 50px; 
 	text-align: center; font-family: Helvetica, sans-serif, arial;
 }
 #leaders{
-	background-color: rgb(204, 0, 0); color:  #d4d4d4;
+	background-color: rgb(204, 0, 0); color:  white;
 	width: 100%; Margin: 0; padding: 50px; text-align: center;
 	font-size: 1.8rem; font-family: 'charter', 'Times New Roman', Times, serif;
 }
 #News-heading{
 	margin-top: 0px;
 }
-#roster-updates{
-	margin-left: 50px; padding: 20px;
-	font-family: 'charter','Times New Roman', Times, serif; font-size: 2rem;
+#roster-updates {
+    margin: 0; padding: 0;
+   font-size: 2rem; font-family: 'charter','Times New Roman', Times, serif;
 }
+    
 
 .roster-container {
     display: flex; flex-wrap: wrap;
     justify-content: flex-start; 
     align-items: flex-start;
-    margin: 10px 75px; padding-bottom: 50px;
+    margin: 20px 75px; padding-bottom: 100px;
 }
 .roster-heading {
-    display: flex; justify-content: space-between;
-    align-items: center; margin: 0 50px; margin-right: 150px; padding: 20px 0;
-}
+    display: flex;
+    margin: 50px 75px; margin-top: 80px; padding: 20px;
+    justify-content: space-between; align-items: center;
+    background-color: white;  border-left: 6px solid rgb(153, 0, 0); box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}    
+    
 .roster-heading h5 {
     margin: 0; padding: 0;
     font-size: 2rem; font-family: 'charter', 'Times New Roman', Times, serif;
@@ -216,7 +227,7 @@ p{
 
 .news-section{
 	margin: 0; 
-	padding-top: 30px; padding-bottom: 50px;
+	padding-top: 30px;
 }
 .bulletin {
     background-color: white; max-width: 900px;
@@ -288,8 +299,6 @@ a.waiver{
 .map-container {
     width: 100%; padding: 0px 0px;
 }
-
-
 
 
 
@@ -432,6 +441,7 @@ a.requirement-link{
 }
 
 
+
 /*Schedule*/
 .banner-image-container {
     position: relative;
@@ -466,8 +476,67 @@ a.requirement-link{
 }
 
 
+/*About*/
+.Ateam-banner {
+    display: flex;
+    justify-content: center; align-items: center;
+    overflow: hidden; 
+    width: 100%; margin: 0px;
+}
+.group-A-pic {
+    width: 100%; height: auto; max-height: 600px;
+    object-fit: cover;
+}
+.Bteam-banner {
+    display: flex;
+    justify-content: center; align-items: center;
+    overflow: hidden; 
+    width: 100%; margin: 0px;
+}
+.group-B-pic {
+    width: 100%; height: auto; max-height: 600px;
+    object-fit: cover;
+}
+.story-text {
+    font-family: Helvetica, sans-serif, arial; font-size: 1.4rem; text-align: center; line-height: 1.52em;
+    background-color: black; color: #f5f5f5; 
+    padding: 40px 150px; margin: 0px;
+}   
 
 
+.social-media-section {
+    display: flex; justify-content: center; align-items: center;
+    gap: 50px;
+    padding: 50px 50px;
+}
+.social-icon {
+    max-width: 250px; max-height: 250px;
+    transition: transform 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.youtube-section {
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+}
+.youtube-section p {
+    font-family: Helvetica, sans-serif, Arial; font-size: 1.2rem; font-weight: bold;
+    margin: 0px;
+}
+.youtube-link {
+    display: inline-block; text-align: center;
+    margin-top: 15px; margin-bottom: 100px;
+    font-weight: bold; font-size: 1.1rem; text-decoration: none; font-family: 'charter', 'Times New Roman', Times, serif;
+    color: rgb(153, 0, 0);
+}
+.youtube-link:hover {
+    text-decoration: underline;
+    color: black;
+}
 
 
 
@@ -492,7 +561,7 @@ a.requirement-link{
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
-.fund-story{
+.fund-story {
     text-align: center; font-family: 'charter', 'Times New Roman', Times, serif;
     padding: 20px; margin: 0px auto; max-width: 900px;
 }
@@ -517,8 +586,7 @@ a.requirement-link{
 
 
 
-
-
+/*media responsiveness*/
 @media (max-width: 1060px) {
 	.navbar {
 		display: flex;
