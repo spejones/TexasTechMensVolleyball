@@ -162,7 +162,7 @@ p{
 	gap: 20px; margin: 0px 0px; padding-top: 80px; padding-bottom: 80px;
 }
 .profile-card {
-	background-color: white;
+	background-color: rgb(232, 232, 232);
 	border-radius: 12px;
 	padding: 20px;
 	width: 180px;
@@ -187,7 +187,7 @@ p{
          0.5px  0.5px 0 #8b8b8b;
 }
 .job-title {
-	font-size: 0.9em; font-family: Helvetica, sans-serif, arial;
+	font-size: 0.97em; font-family: Helvetica, sans-serif, arial; font-weight: bold;
 	color: rgb(85, 85, 85); padding: 5px;
 }
 .profile-card:hover{
