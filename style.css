@@ -854,75 +854,128 @@ a.requirement-link{
 		height: 200px;
 	}
 }
-@media (max-width:765px){
-	.navbar{ 
-		display: inline-block;
-		   overflow: hidden;
-		   align-items: right;
-		   top: 0px;
-		   width: 100%;
-		   z-index: 10000;
-		padding: 15px;
-		position: relative;
-	}
-	.navbar a{
-		text-decoration: none;
-		color: white;
-		padding: 5px; padding-right: 10px; padding-left: 0;
-		display: block;
-		text-align: right;
-	}
-	.navbar ul {
-		padding: 0px;
-		margin: 0px;
-		display: block; 
-		float: right;
-		font-family: Helvetica, 'Arial Narrow', Arial, sans-serif;
-		font-size: 22px;
-	}
-	.navbar img{
-		height: 150px; width: 300px; margin: 0px;
-	}
+@media (max-width: 750px) {
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Stack logo above nav items */
+        align-items: flex-start;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .navbar img {
+        height: 120px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row; /* Show menu inline */
+        justify-content: flex-end; /* Align to the right */
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .navbar li {
+        margin-left: 15px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul li ul.dropdown {
+        position: absolute;
+        right: 0; /* Dropdown aligns with right edge */
+    }
+    .homepage-pic{
+        max-height: 400px;
+    }
 	main{
-		margin: 10px; padding: 10px;
+		margin: 0px; padding: 10px;
 	}
+    h1 {
+        padding-top: 50px; padding-bottom: 35px;
+    }
+    .roster-container{
+        display: flex; align-items: center; width: 100%; margin: 0px;
+    }
+    .roster-image{
+        display: flex; align-items: center; width: 100%;
+    }
+    .roster-image:hover{
+        transform: scale(1.3);
+    }
+    .roster-heading {
+        display: flex; flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 535px) { 
-	.navbar{ 
-		display: inline-block;
-		   overflow: hidden;
-		   align-items: right;
-		   top: 0px;
-		   width: 100%;
-		   z-index: 10000;
-		padding: 15px;
-		position: relative;
-	}
-	.navbar a{
-		text-decoration: none;
-		color: white;
-		padding: 5px; padding-right: 10px; padding-left: 0;
-		display: block;
-		text-align: right;
-	}
-	.navbar ul {
-		padding: 0px;
-		margin: 0px;
-		display: block; 
-		float: right;
-		font-family: Helvetica, 'Arial Narrow', Arial, sans-serif;
-		font-size: 22px;
-	}
-	.navbar img{
-		height: 150px; width: 300px; margin: 0px;
-	}
+@media (max-width: 540px) { 
+	.navbar {
+        display: flex;
+        flex-direction: column; /* Stack logo above nav items */
+        align-items: flex-start;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .navbar img {
+        height: 120px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row; /* Show menu inline */
+        justify-content: flex-end; /* Align to the right */
+        width: 100%; font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .navbar li {
+        margin-left: 15px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul li ul.dropdown {
+        position: absolute;
+        right: 0; /* Dropdown aligns with right edge */
+    }
+    .homepage-pic{
+        max-height: 400px;
+    }
 	main{
-		margin: 10px; padding: 10px;
+		margin: 0px; padding: 10px;
 	}
+    h1 {
+        padding-top: 50px; padding-bottom: 35px;
+    }
+
+    .roster-container{
+        display: flex; align-items: center; width: 100%; margin: 0px;
+    }
+    .roster-image{
+        display: flex; align-items: center; width: 100%;
+    }
+    .roster-image:hover{
+        transform: scale(1.3);
+    }
+    .roster-heading {
+        display: flex; flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 455px) { 
+@media (max-width: 400px) { 
 .navbar{ 
 	display: inline-block;
    	overflow: hidden;
@@ -930,7 +983,7 @@ a.requirement-link{
    	top: 0px;
    	width: 100%;
    	z-index: 10000;
-	padding: 15px;
+	padding: 5px;
 	position: relative;
 }
 .navbar a{
@@ -953,8 +1006,26 @@ a.requirement-link{
 .navbar img{
 	height: 100px; width: 200px; margin-top: 30px;
 }
+.homepage-pic{
+    max-height: 400px;
+}
 main{
-	margin: 10px; padding: 10px;
+    margin: 0px; padding: 10px;
+}
+h1 {
+    padding-top: 50px; padding-bottom: 35px;
+}
+.roster-container{
+    display: flex; align-items: center; width: 100%; margin: 0px;
+}
+.roster-image{
+    display: flex; align-items: center; width: 100%;
+}
+.roster-image:hover{
+    transform: scale(1.3);
+}
+.roster-heading {
+    display: flex; flex-wrap: wrap;
 }
 }
 
@@ -962,18 +1033,23 @@ main{
 @media (max-width: 900px) {
     .tryout-info-wrapper {
         flex-direction: column;
-        height: auto;
-        gap: 20px;
+        padding: 50px 20px;
     }
-    .tryout-text-box,
+
+    .tryout-text-box {
+        width: 100%;
+        padding: 20px;
+    }
+
     .tryout-image {
-        max-width: 90%;
-        height: auto;
+        width: 90%;
+        margin: 0;
     }
-    .tryout-heading {
-        font-size: 1.5rem;
-    }
-    .tryout-description {
-        font-size: 1.1rem;
+
+    .learn-more-button {
+        position: relative;
+        display: block;
+        margin: 20px auto 0 auto;
+        text-align: center;
     }
 }
