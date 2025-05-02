@@ -1553,3 +1553,73 @@ h3 {
     align-items: center;
 }
 }
+
+
+/*About*/
+@media (max-width: 750px){
+    .story-text {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    .social-media-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .social-icon {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .youtube-section {
+        padding:10px 0; width: 100%; height: auto;
+        flex-direction: column;
+    }
+
+    .click-here-text {
+        font-size: 1rem;
+    }
+
+    .youtube-text {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .story-text {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    .social-media-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .social-icon {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .youtube-section {
+        padding:10px 0; width: 100%; height: auto;
+        flex-direction: column;
+    }
+
+    .click-here-text {
+        font-size: 1rem;
+    }
+
+    .youtube-text {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 405px){
+
+}
