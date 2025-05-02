@@ -1089,7 +1089,7 @@ h1 {
     display: flex; flex-wrap: wrap;
 }
 }
-@media (max-width: 540px) { 
+@media (max-width: 600px) { 
 .homepage-pic{
     max-height: 400px;
 }
@@ -1137,7 +1137,7 @@ main{
     margin: 0px; padding: 0px; margin-top: 170px;
 }
 h1 {
-    padding-top: 50px; padding-bottom: 35px; font-size: 1.5rem;
+    padding-top: 50px; padding-bottom: 35px; font-size: 1.4rem;
 }
 h3 {
     font-size: 1.3rem;
@@ -1471,7 +1471,7 @@ h3 {
 }
 .tryout-image {
     max-width: 100%; height: 50%;
-    margin-top: 20px;
+    margin-top: 20px; display: contain;
 }
 .requirements-flex-container {
     flex-direction: column;
@@ -1543,8 +1543,8 @@ h3 {
 }
 .spring-tournament,
 .schedule-2025 {
-    font-size: 2rem; /* Reduce font size */
-    padding: 20px;   /* Reduce padding */
+    font-size: 2rem; 
+    padding: 20px;   
     flex-direction: column;
     text-align: center;
 }
@@ -1621,5 +1621,265 @@ h3 {
 
 
 @media (max-width: 405px){
+    .story-text {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    .social-media-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
 
+    .social-icon {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .youtube-section {
+        padding:10px 0; width: 100%; height: auto;
+        flex-direction: column;
+    }
+
+    .click-here-text {
+        font-size: 1rem;
+    }
+
+    .youtube-text {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+
+/*Donate*/
+@media (max-width: 750px){
+    .fund-container {
+        padding: 10px;
+      }
+    
+      .fund-header h2 {
+        font-size: 1.4rem;
+        padding: 30px 10px;
+      }
+    
+      .donate-button {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+      }
+    
+      .fund-story p {
+        padding: 6px;
+        font-size: 0.95rem;
+      }
+  }
+
+@media (max-width: 600px){
+    .fund-container {
+        padding: 10px;
+      }
+    
+      .fund-header h2 {
+        font-size: 1rem;
+        padding: 20px 10px;
+      }
+    
+      .donate-button {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+      }
+    
+      .fund-story p {
+        padding: 6px;
+        font-size: 0.95rem;
+      }
+  }
+
+@media (max-width: 405px) {
+    .fund-container {
+      padding: 20px;
+    }
+  
+    .fund-header h2 {
+      font-size: 1rem;
+      padding: 20px 10px;
+    }
+  
+    .donate-button {
+      font-size: 1.3rem;
+      padding: 10px 15px;
+    }
+  
+    .fund-story p {
+      padding: 6px;
+      font-size: 0.95rem;
+    }
+}
+
+
+/*Gallery*/
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        column-count: 1;
+        padding: 5px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*Contact*/
+@media (max-width: 1000px){
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .contact-box img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .contact-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .contact-side-image {
+        max-width: 50%;
+        transform: rotate(0deg);
+    }
+
+    .SoapSuds {
+        height: auto;
+    }
+
+    .connect-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 750px){
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .contact-box img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .contact-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .contact-side-image {
+        max-width: 70%;
+        transform: rotate(0deg);
+    }
+
+    .SoapSuds {
+        height: auto;
+    }
+
+    .connect-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .contact-box img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .contact-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .contact-side-image {
+        max-width: 80%;
+        transform: rotate(0deg);
+    }
+
+    .SoapSuds {
+        height: auto;
+    }
+
+    .connect-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 405px){
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .contact-box img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .contact-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .contact-side-image {
+        max-width: 80%;
+        transform: rotate(0deg);
+    }
+
+    .SoapSuds {
+        height: auto;
+    }
+
+    .connect-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
 }
