@@ -316,14 +316,6 @@ p{
     text-align: center; font-family: Helvetica, sans-serif, Arial; font-size: 1.2rem;
 }
 
-
-.requirements-container {
-	padding-top: 20px; padding-bottom: 50px; margin: 0px;
-}
-.requirments{
-	margin-left: 75px; margin-top: 5px;
-	font-family: Helvetica, sans-serif, arial; font-size: 1rem;
-}
 a.waiver{
 	margin-left: 75px; text-decoration: none; color: rgb(204, 0, 0);
 	font-family: Helvetica, sans-serif, arial;
@@ -411,6 +403,9 @@ a.requirement-link{
 .requirement-card a.requirement-link:hover{
     text-decoration: underline; font-size: 1.1rem; font-weight: bold;
     color: rgb(153, 0, 0);
+}
+.requirements-container {
+	padding-top: 20px; padding-bottom: 50px; margin: 0px;
 }
 .requirements-flex-container {
     display: flex; flex-wrap: wrap;
