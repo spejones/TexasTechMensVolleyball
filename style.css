@@ -1534,7 +1534,7 @@ h3 {
     font-size: 1rem;
 }
 .tryout-image {
-    max-width: 250px; max-height: auto;
+    max-width: 250px; max-height: 300px;
     margin-top: 20px; display: contain;
 }
 .requirements-flex-container {
