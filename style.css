@@ -764,7 +764,6 @@ a.requirement-link{
     background-color: black;
 }
 
-
 .contact-section {
     display: flex; flex-wrap: nowrap;
     justify-content: space-between; align-items: center; 
@@ -855,42 +854,40 @@ a.requirement-link{
 	width: 400px; height: 200px;
 }
 }
-
 @media (max-width: 900px) {
-    .navbar {
-        display: flex; position: fixed; flex-direction: column; align-items: flex-start;
-        padding: 10px 20px;
-    }
-    .navbar img {
-        height: 120px; width: auto;
-        margin-bottom: 10px;
-    }
-    .navbar ul {
-        display: flex; flex-direction: row; justify-content: flex-end;
-        width: 100%;
-        margin-top: 0;
-    }
-    .navbar li {
-        margin-left: 15px;
-    }
-    .navbar a {
-        display: inline-block; text-align: center;
-        padding: 10px;
-    }
-    .navbar ul li ul.dropdown {
-        display: none; position: absolute;
-        top: 100%; left: 40%; 
-        padding: 0; margin-top: 0;
-        min-width: 120px;
-        transform: translateX(-50%);
-        background-color: rgb(153, 0, 0);
-        text-align: center;
-    }
-    .navbar ul li:hover ul.dropdown {
-        display: block; 
-    }
+.navbar {
+    display: flex; position: fixed; flex-direction: column; align-items: flex-start;
+    padding: 10px 20px;
 }
-
+.navbar img {
+    height: 120px; width: auto;
+    margin-bottom: 10px;
+}
+.navbar ul {
+    display: flex; flex-direction: row; justify-content: flex-end;
+    width: 100%;
+    margin-top: 0;
+}
+.navbar li {
+   margin-left: 15px;
+}
+.navbar a {
+    display: inline-block; text-align: center;
+    padding: 10px;
+}
+.navbar ul li ul.dropdown {
+    display: none; position: absolute;
+    top: 100%; left: 40%; 
+    padding: 0; margin-top: 0;
+    min-width: 120px;
+    transform: translateX(-50%);
+    background-color: rgb(153, 0, 0);
+    text-align: center;
+}
+.navbar ul li:hover ul.dropdown {
+    display: block; 
+}
+}
 @media (max-width: 750px) {
 .navbar {
     display: flex; position: fixed; flex-direction: column; align-items: flex-start;
@@ -925,7 +922,6 @@ a.requirement-link{
     display: block; 
 }
 }
-
 @media (max-width: 600px) { 
 .navbar {
     display: flex; position: fixed; flex-direction: column; align-items: flex-start;
@@ -1216,7 +1212,7 @@ h3 {
     display: flex; align-items: center; width: 100%;
 }
 .roster-image:hover{
-    transform: scale(1.3);
+    transform: scale(1.45);
 }
 .roster-heading {
     display: flex; flex-wrap: wrap;
