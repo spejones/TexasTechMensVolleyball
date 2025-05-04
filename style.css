@@ -77,13 +77,6 @@ footer{
 	padding-left: 20px; padding-top: 10px;
 	margin-bottom: -70px;
 }
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-}
 
 
 /*all heading & p*/
@@ -846,16 +839,16 @@ a.requirement-link{
 	font-size: 20px; font-family: Helvetica, Arial, sans-serif;
 }
 .navbar img {
-	width: 400px; height: 200px;
+	width: 100%; max-height: 200px;
 }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 .navbar {
     display: flex; position: fixed; flex-direction: column; align-items: flex-start;
     padding: 10px 20px;
 }
 .navbar img {
-    height: 120px; width: auto;
+    max-height: 120px; width: auto;
     margin-bottom: 10px;
 }
 .navbar ul {
@@ -889,7 +882,7 @@ a.requirement-link{
     padding: 10px 20px;
 }
 .navbar img {
-    height: 120px; width: auto;
+    max-height: 120px; width: auto;
     margin-bottom: 10px;
 }
 .navbar ul {
@@ -1075,6 +1068,11 @@ a.requirement-link{
 }
 
 /*Homepage*/
+@media (max-width: 1060px) {
+h1 {
+    padding-top: 150px; padding-bottom: 35px;
+}
+}
 @media (max-width: 750px) {
 .homepage-pic{
     max-height: 400px;
@@ -1115,7 +1113,7 @@ h1 {
     display: flex; flex-wrap: wrap;
 }
 .bulletin{
-padding: 50px 30px; margin: 50px auto; max-width: 500px;
+    padding: 50px 30px; margin: 50px auto; max-width: 500px;
 }
 }
 @media (max-width: 600px) { 
@@ -1276,242 +1274,236 @@ h3 {
 
 /* Tryouts */
 @media (max-width: 1000px) {
-    .tryout-info-wrapper {
-        flex-direction: column;
-        padding: 50px 20px;
-        min-width: auto; height: auto;
-        background-size: cover;
-    }
-    .tryout-text-box {
-        max-width: 100%;
-        padding: 15px;
-        min-height: auto;
-    }
-    #page-header {
-        padding: 20px;
-    }
-    .tryout-heading {
-        font-size: 1.4rem;
-    }
-    .tryout-description {
-        font-size: 1rem;
-    }
-    .tryout-image {
-        max-width: 600px; max-height: auto;
-        margin-top: 20px;
-    }
+.tryout-info-wrapper {
+    flex-direction: column;
+    padding: 50px 20px;
+    min-width: auto; height: auto;
+    background-size: cover;
+}
+.tryout-text-box {
+    max-width: 100%;
+    padding: 15px;
+    min-height: auto;
+}
+#page-header {
+    padding: 20px;
+}
+.tryout-heading {
+    font-size: 1.4rem;
+}
+.tryout-description {
+    font-size: 1rem;
+}
+.tryout-image {
+    max-width: 600px; max-height: auto;
+    margin-top: 20px;
+}
 }
 @media (max-width: 750px) {
-    .tryout-info-wrapper {
-        flex-direction: column;
-        padding: 50px 20px;
-        min-width: auto; height: auto;
-        background-size: cover;
-    }
-    .tryout-text-box {
-        max-width: 100%;
-        padding: 15px;
-        min-height: auto;
-    }
-    #page-header {
-        padding: 20px;
-    }
-    .tryout-heading {
-        font-size: 1.4rem;
-    }
-    .tryout-description {
-        font-size: 1rem;
-    }
-    .tryout-image {
-        max-width: 400px; max-height: auto;
-        margin-top: 20px;
-    }
-    .requirements-flex-container {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-    .requirement-boxes {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        gap: 10px;
-    }
-    .requirement-card {
-        width: 90%;
-        height: auto;
-    }
-    .requirement-img-container {
-        justify-content: center;
-        margin: 10px auto 50px auto;
-    }
-    .requirement-image {
-        max-width: 100%; max-height: 300px;
-    }
-    .tryout-dates-container {
-        flex-direction: column;
-        margin: 20px; gap: 20px;
-    }
-    .tryout-date-card {
-        padding: 20px;
-    }
-    .practice-card, .practice-card h4 {
-        margin: 5px; padding: 10px; align-content: left; text-align: left;
-    }
-    .location-description {
-        font-size: 1rem;
-        padding: 10px;
-    }
-    .image-disclaimer {
-        margin-left: 20px;
-        font-size: 0.75rem;
-    }
-    .location-display {
-        flex-direction: column;
-        gap: 15px;
-    }
-        .location-box {
-        width: 100%;
-         padding: 10px;
-    }
-    .info-box-container{
-        display: flex; align-items: center; width: 100%; margin: 0px;
-    }
-    .info-box {
-        display: flex; align-items: center; text-align: center; 
-    }
-    .info-box p {
-        font-size: .9rem;
-    }
-    .info-box a{
-        display: inline-block;
-        margin: auto 10px; 
-        font-weight: bold; font-size: .8rem;  text-decoration: none;
-    }
-    .info-box a:hover{
-        text-decoration: underline; transform: color rgb(204, 0, 0);
-    }
-    .learn-more-button {
-        position: static; display: block;
-        margin: 20px auto 0 auto;
-    }
-    .spring-tournament,
-    .schedule-2025 {
-        font-size: 2.5rem;
-        padding: 30px;
-    }
-    .tournament.container {
-        flex-wrap: wrap;
-        align-items: center;
-    }
+.tryout-info-wrapper {
+    flex-direction: column;
+    padding: 50px 20px;
+    min-width: auto; height: auto;
+    background-size: cover;
 }
-
-
+.tryout-text-box {
+    max-width: 100%;
+    padding: 15px;
+    min-height: auto;
+}
+#page-header {
+    padding: 20px;
+}
+.tryout-heading {
+    font-size: 1.4rem;
+}
+.tryout-description {
+    font-size: 1rem;
+}
+.tryout-image {
+    max-width: 400px; max-height: auto;
+    margin-top: 20px;
+}
+.requirements-flex-container {
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.requirement-boxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+.requirement-card {
+    width: 90%;
+    height: auto;
+}
+.requirement-img-container {
+    justify-content: center;
+    margin: 10px auto 50px auto;
+}
+.requirement-image {
+    max-width: 100%; max-height: 300px;
+}
+.tryout-dates-container {
+    flex-direction: column;
+    margin: 20px; gap: 20px;
+}
+.tryout-date-card {
+    padding: 20px;
+}
+.practice-card, .practice-card h4 {
+    margin: 5px; padding: 10px; align-content: left; text-align: left;
+}
+.location-description {
+    font-size: 1rem;
+    padding: 10px;
+}
+.image-disclaimer {
+    margin-left: 20px;
+    font-size: 0.75rem;
+}
+.location-display {
+    flex-direction: column;
+    gap: 15px;
+}
+    .location-box {
+    width: 100%;
+    padding: 10px;
+}
+.info-box-container{
+    display: flex; align-items: center; width: 100%; margin: 0px;
+}
+.info-box {
+    display: flex; align-items: center; text-align: center; 
+}
+.info-box p {
+    font-size: .9rem;
+}
+.info-box a{
+    display: inline-block;
+    margin: auto 10px; 
+    font-weight: bold; font-size: .8rem;  text-decoration: none;
+}
+.info-box a:hover{
+    text-decoration: underline; transform: color rgb(204, 0, 0);
+}
+.learn-more-button {
+    position: static; display: block;
+    margin: 20px auto 0 auto;
+}
+.spring-tournament,
+.schedule-2025 {
+    font-size: 2.5rem;
+    padding: 30px;
+}
+.tournament.container {
+    flex-wrap: wrap;
+    align-items: center;
+}
+}
 @media (max-width: 600px) {
-    .tryout-info-wrapper {
-        flex-direction: column;
-        padding: 50px 20px;
-        min-width: auto; height: auto;
-        background-size: cover;
-    }
-    .tryout-text-box {
-        max-width: 100%;
-        padding: 15px;
-        min-height: auto;
-    }
-    #page-header {
-        padding: 20px;
-    }
-    .tryout-heading {
-        font-size: 1.4rem;
-    }
-    .tryout-description {
-        font-size: 1rem;
-    }
-    .tryout-image {
-        max-width: 350px; max-height: auto;
-        margin-top: 20px;
-    }
-    .requirements-flex-container {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-    .requirement-boxes {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        gap: 10px;
-    }
-    .requirement-card {
-        width: 90%;
-        height: auto;
-    }
-    .requirement-img-container {
-        justify-content: center;
-        margin: 10px auto 50px auto;
-    }
-    .requirement-image {
-        max-width: 100%; max-height: 300px;
-    }
-    .tryout-dates-container {
-        flex-direction: column;
-        margin: 20px; gap: 20px;
-    }
-    .tryout-date-card {
-        padding: 20px;
-    }
-    .practice-card, .practice-card h4 {
-        margin: 5px; padding: 10px; align-content: left; text-align: left;
-    }
-    .location-description {
-        font-size: 1rem;
-        padding: 10px;
-    }
-    .image-disclaimer {
-        margin-left: 20px;
-        font-size: 0.75rem;
-    }
-    .location-display {
-        flex-direction: column;
-        gap: 15px;
-    }
-        .location-box {
-        width: 100%;
-         padding: 10px;
-    }
-    .info-box-container{
-        display: flex; align-items: center; width: 100%; margin: 0px;
-    }
-    .info-box {
-        display: flex; align-items: center; text-align: center; 
-    }
-    .info-box p {
-        font-size: .9rem;
-    }
-    .info-box a{
-        display: inline-block;
-        margin: auto 10px; 
-        font-weight: bold; font-size: .8rem;  text-decoration: none;
-    }
-    .info-box a:hover{
-        text-decoration: underline; transform: color rgb(204, 0, 0);
-    }
-    .learn-more-button {
-        position: static; display: block;
-        margin: 20px auto 0 auto;
-    }
-    .spring-tournament,
-    .schedule-2025 {
-        font-size: 2.5rem;
-        padding: 30px;
-    }
-    .tournament.container {
-        flex-direction: column;
-        align-items: center;
-    }
+.tryout-info-wrapper {
+    flex-direction: column;
+    padding: 50px 20px;
+    min-width: auto; height: auto;
+    background-size: cover;
 }
-
-
-
+.tryout-text-box {
+    max-width: 100%;
+    padding: 15px;
+    min-height: auto;
+}
+#page-header {
+    padding: 20px;
+}
+.tryout-heading {
+    font-size: 1.4rem;
+}
+.tryout-description {
+    font-size: 1rem;
+}
+.tryout-image {
+    max-width: 350px; max-height: auto;
+    margin-top: 20px;
+}
+.requirements-flex-container {
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.requirement-boxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+.requirement-card {
+    width: 90%;
+    height: auto;
+}
+.requirement-img-container {
+    justify-content: center;
+    margin: 10px auto 50px auto;
+}
+.requirement-image {
+    max-width: 100%; max-height: 300px;
+}
+.tryout-dates-container {
+    flex-direction: column;
+    margin: 20px; gap: 20px;
+}
+.tryout-date-card {
+    padding: 20px;
+}
+.practice-card, .practice-card h4 {
+    margin: 5px; padding: 10px; align-content: left; text-align: left;
+}
+.location-description {
+    font-size: 1rem;
+    padding: 10px;
+}
+.image-disclaimer {
+    margin-left: 20px;
+    font-size: 0.75rem;
+}
+.location-display {
+    flex-direction: column;
+    gap: 15px;
+}
+.location-box {
+    width: 100%;
+    padding: 10px;
+}
+.info-box-container{
+    display: flex; align-items: center; width: 100%; margin: 0px;
+}
+.info-box {
+    display: flex; align-items: center; text-align: center; 
+}
+.info-box p {
+    font-size: .9rem;
+}
+.info-box a{
+    display: inline-block;
+    margin: auto 10px; 
+    font-weight: bold; font-size: .8rem;  text-decoration: none;
+}
+.info-box a:hover{
+    text-decoration: underline; transform: color rgb(204, 0, 0);
+}
+.learn-more-button {
+    position: static; display: block;
+    margin: 20px auto 0 auto;
+}
+.spring-tournament,.schedule-2025 {
+    font-size: 2.5rem;
+    padding: 30px;
+}
+.tournament.container {
+    flex-direction: column;
+    align-items: center;
+}
+}
 @media (max-width: 405px) {
 .tryout-info-wrapper {
     flex-direction: column;
